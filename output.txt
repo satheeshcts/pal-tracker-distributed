@@ -1,0 +1,245 @@
+Getting env variables for app tracker-allocations in org ssiddhan-pal / space sandbox as satheesh.siddhan@cognizant.com...
+OK
+
+System-Provided:
+{
+ "VCAP_SERVICES": {
+  "p-circuit-breaker-dashboard": [
+   {
+    "credentials": {
+     "amqp": {
+      "dashboard_url": "https://pivotal-rabbitmq.sys.longs.pal.pivotal.io/#/login/a8754b59-5f9d-4961-a4be-9b5587303f06/lro0j7dljvld7bts895imvo4fh",
+      "hostname": "10.0.4.83",
+      "hostnames": [
+       "10.0.4.83"
+      ],
+      "http_api_uri": "https://a8754b59-5f9d-4961-a4be-9b5587303f06:lro0j7dljvld7bts895imvo4fh@pivotal-rabbitmq.sys.longs.pal.pivotal.io/api/",
+      "http_api_uris": [
+       "https://a8754b59-5f9d-4961-a4be-9b5587303f06:lro0j7dljvld7bts895imvo4fh@pivotal-rabbitmq.sys.longs.pal.pivotal.io/api/"
+      ],
+      "password": "lro0j7dljvld7bts895imvo4fh",
+      "protocols": {
+       "amqp": {
+        "host": "10.0.4.83",
+        "hosts": [
+         "10.0.4.83"
+        ],
+        "password": "lro0j7dljvld7bts895imvo4fh",
+        "port": 5672,
+        "ssl": false,
+        "uri": "amqp://a8754b59-5f9d-4961-a4be-9b5587303f06:lro0j7dljvld7bts895imvo4fh@10.0.4.83:5672/7b94f884-53fe-424e-b417-c33d00876596",
+        "uris": [
+         "amqp://a8754b59-5f9d-4961-a4be-9b5587303f06:lro0j7dljvld7bts895imvo4fh@10.0.4.83:5672/7b94f884-53fe-424e-b417-c33d00876596"
+        ],
+        "username": "a8754b59-5f9d-4961-a4be-9b5587303f06",
+        "vhost": "7b94f884-53fe-424e-b417-c33d00876596"
+       },
+       "management": {
+        "host": "10.0.4.83",
+        "hosts": [
+         "10.0.4.83"
+        ],
+        "password": "lro0j7dljvld7bts895imvo4fh",
+        "path": "/api/",
+        "port": 15672,
+        "ssl": false,
+        "uri": "http://a8754b59-5f9d-4961-a4be-9b5587303f06:lro0j7dljvld7bts895imvo4fh@10.0.4.83:15672/api/",
+        "uris": [
+         "http://a8754b59-5f9d-4961-a4be-9b5587303f06:lro0j7dljvld7bts895imvo4fh@10.0.4.83:15672/api/"
+        ],
+        "username": "a8754b59-5f9d-4961-a4be-9b5587303f06"
+       }
+      },
+      "ssl": false,
+      "uri": "amqp://a8754b59-5f9d-4961-a4be-9b5587303f06:lro0j7dljvld7bts895imvo4fh@10.0.4.83/7b94f884-53fe-424e-b417-c33d00876596",
+      "uris": [
+       "amqp://a8754b59-5f9d-4961-a4be-9b5587303f06:lro0j7dljvld7bts895imvo4fh@10.0.4.83/7b94f884-53fe-424e-b417-c33d00876596"
+      ],
+      "username": "a8754b59-5f9d-4961-a4be-9b5587303f06",
+      "vhost": "7b94f884-53fe-424e-b417-c33d00876596"
+     },
+     "dashboard": "https://hystrix-268c640e-7480-4dd5-9cbe-856791ee8aaa.apps.longs.pal.pivotal.io",
+     "stream": "https://turbine-268c640e-7480-4dd5-9cbe-856791ee8aaa.apps.longs.pal.pivotal.io"
+    },
+    "label": "p-circuit-breaker-dashboard",
+    "name": "tracker-circuit-breaker-dashboard",
+    "plan": "standard",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "circuit-breaker",
+     "hystrix-amqp",
+     "spring-cloud"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "p-identity": [
+   {
+    "credentials": {
+     "auth_domain": "https://p-identity.login.sys.longs.pal.pivotal.io",
+     "client_id": "dba75334-7dba-467a-a92f-b2c54133eccf",
+     "client_secret": "ce57c6f0-36c0-4eae-abd6-5a08d7967a9e"
+    },
+    "label": "p-identity",
+    "name": "tracker-sso",
+    "plan": "p-identity",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [],
+    "volume_mounts": []
+   }
+  ],
+  "p-mysql": [
+   {
+    "credentials": {
+     "hostname": "10.0.4.41",
+     "jdbcUrl": "jdbc:mysql://10.0.4.41:3306/cf_a083bbc3_a608_449b_9c47_66799b3759c7?user=ylzf4uxYFZWoUGOX\u0026password=I5ZQwjDj6CnwQ3K3",
+     "name": "cf_a083bbc3_a608_449b_9c47_66799b3759c7",
+     "password": "I5ZQwjDj6CnwQ3K3",
+     "port": 3306,
+     "uri": "mysql://ylzf4uxYFZWoUGOX:I5ZQwjDj6CnwQ3K3@10.0.4.41:3306/cf_a083bbc3_a608_449b_9c47_66799b3759c7?reconnect=true",
+     "username": "ylzf4uxYFZWoUGOX"
+    },
+    "label": "p-mysql",
+    "name": "tracker-allocations-database",
+    "plan": "100mb",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "mysql",
+     "relational"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "p-rabbitmq": [
+   {
+    "credentials": {
+     "dashboard_url": "https://pivotal-rabbitmq.sys.longs.pal.pivotal.io/#/login/7bc5401d-807c-4b20-ace7-607ea6c1ae2b/5vc2f3dgqabd82l9n066jj7scf",
+     "hostname": "10.0.4.83",
+     "hostnames": [
+      "10.0.4.83"
+     ],
+     "http_api_uri": "https://7bc5401d-807c-4b20-ace7-607ea6c1ae2b:5vc2f3dgqabd82l9n066jj7scf@pivotal-rabbitmq.sys.longs.pal.pivotal.io/api/",
+     "http_api_uris": [
+      "https://7bc5401d-807c-4b20-ace7-607ea6c1ae2b:5vc2f3dgqabd82l9n066jj7scf@pivotal-rabbitmq.sys.longs.pal.pivotal.io/api/"
+     ],
+     "password": "5vc2f3dgqabd82l9n066jj7scf",
+     "protocols": {
+      "amqp": {
+       "host": "10.0.4.83",
+       "hosts": [
+        "10.0.4.83"
+       ],
+       "password": "5vc2f3dgqabd82l9n066jj7scf",
+       "port": 5672,
+       "ssl": false,
+       "uri": "amqp://7bc5401d-807c-4b20-ace7-607ea6c1ae2b:5vc2f3dgqabd82l9n066jj7scf@10.0.4.83:5672/09425662-5249-4369-bdba-9932484f28f9",
+       "uris": [
+        "amqp://7bc5401d-807c-4b20-ace7-607ea6c1ae2b:5vc2f3dgqabd82l9n066jj7scf@10.0.4.83:5672/09425662-5249-4369-bdba-9932484f28f9"
+       ],
+       "username": "7bc5401d-807c-4b20-ace7-607ea6c1ae2b",
+       "vhost": "09425662-5249-4369-bdba-9932484f28f9"
+      },
+      "management": {
+       "host": "10.0.4.83",
+       "hosts": [
+        "10.0.4.83"
+       ],
+       "password": "5vc2f3dgqabd82l9n066jj7scf",
+       "path": "/api/",
+       "port": 15672,
+       "ssl": false,
+       "uri": "http://7bc5401d-807c-4b20-ace7-607ea6c1ae2b:5vc2f3dgqabd82l9n066jj7scf@10.0.4.83:15672/api/",
+       "uris": [
+        "http://7bc5401d-807c-4b20-ace7-607ea6c1ae2b:5vc2f3dgqabd82l9n066jj7scf@10.0.4.83:15672/api/"
+       ],
+       "username": "7bc5401d-807c-4b20-ace7-607ea6c1ae2b"
+      }
+     },
+     "ssl": false,
+     "uri": "amqp://7bc5401d-807c-4b20-ace7-607ea6c1ae2b:5vc2f3dgqabd82l9n066jj7scf@10.0.4.83/09425662-5249-4369-bdba-9932484f28f9",
+     "uris": [
+      "amqp://7bc5401d-807c-4b20-ace7-607ea6c1ae2b:5vc2f3dgqabd82l9n066jj7scf@10.0.4.83/09425662-5249-4369-bdba-9932484f28f9"
+     ],
+     "username": "7bc5401d-807c-4b20-ace7-607ea6c1ae2b",
+     "vhost": "09425662-5249-4369-bdba-9932484f28f9"
+    },
+    "label": "p-rabbitmq",
+    "name": "tracker-amqp",
+    "plan": "standard",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "rabbitmq",
+     "messaging",
+     "message-queue",
+     "amqp",
+     "stomp",
+     "mqtt",
+     "pivotal"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "p-service-registry": [
+   {
+    "credentials": {
+     "access_token_uri": "https://p-spring-cloud-services.uaa.sys.longs.pal.pivotal.io/oauth/token",
+     "client_id": "p-service-registry-5c341d5f-10a5-4b88-aa3a-23ca40b01e1b",
+     "client_secret": "1Ycg5gIyqKc8",
+     "uri": "https://eureka-01a0b306-1e52-4f14-9a26-db2dee6d5179.apps.longs.pal.pivotal.io"
+    },
+    "label": "p-service-registry",
+    "name": "tracker-service-registry",
+    "plan": "standard",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "eureka",
+     "discovery",
+     "registry",
+     "spring-cloud"
+    ],
+    "volume_mounts": []
+   }
+  ]
+ }
+}
+
+{
+ "VCAP_APPLICATION": {
+  "application_id": "9d4b64bf-2881-4aed-8e1f-0ed52a45362c",
+  "application_name": "tracker-allocations",
+  "application_uris": [
+   "allocations-pal-ssiddhan.apps.longs.pal.pivotal.io"
+  ],
+  "application_version": "c6758f11-0d23-420c-aa35-4d8795ebfdf3",
+  "cf_api": "https://api.sys.longs.pal.pivotal.io",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 1024
+  },
+  "name": "tracker-allocations",
+  "space_id": "42409df8-0c79-4892-8643-06eaa48a9025",
+  "space_name": "sandbox",
+  "uris": [
+   "allocations-pal-ssiddhan.apps.longs.pal.pivotal.io"
+  ],
+  "users": null,
+  "version": "c6758f11-0d23-420c-aa35-4d8795ebfdf3"
+ }
+}
+
+User-Provided:
+GRANT_TYPE: client_credentials
+SECURITY_USER_NAME: actuator
+SECURITY_USER_PASSWORD: operations4red
+TRUST_CERTS: api.sys.longs.pal.pivotal.io,uaa.sys.longs.pal.pivotal.io
+
+No running env variables have been set
+
+No staging env variables have been set
+
