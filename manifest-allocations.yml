@@ -5,8 +5,8 @@ applications:
   memory: 1G
   instances: 1
   env:
-      GRANT_TYPE: client_credentials
       TRUST_CERTS: api.sys.longs.pal.pivotal.io,uaa.sys.longs.pal.pivotal.io
+      GRANT_TYPE: client_credentials
   services:
   - tracker-allocations-database
   - tracker-service-registry
